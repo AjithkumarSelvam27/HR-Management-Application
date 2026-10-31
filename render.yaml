@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: hrms
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: ENV
+        value: production
+      # Set in the Render dashboard. Use ssl_ca=/etc/ssl/certs/ca-certificates.crt for TiDB Cloud, e.g.
+      # mysql+pymysql://USER:PASS@HOST:4000/hrms?ssl_ca=/etc/ssl/certs/ca-certificates.crt
+      - key: DATABASE_URL
+        sync: false
+      - key: SEED_ADMIN_EMAIL
+        sync: false
+      - key: SEED_ADMIN_PASSWORD
+        sync: false
+      - key: APP_URL
+        sync: false

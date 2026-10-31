@@ -1,0 +1,6 @@
+[lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[lint.isort]
+known-first-party = ["auth", "db", "mailer", "scope", "routers", "data"]

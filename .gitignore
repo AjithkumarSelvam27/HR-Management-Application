@@ -1,0 +1,17 @@
+node_modules/
+client/dist/
+client/.angular/
+server/venv/
+server/.env
+server/uploads/*
+!server/uploads/.gitkeep
+__pycache__/
+*.pyc
+.ruff_cache/
+ng-new.log
+.env.test
+e2e-results/
+e2e-report/
+playwright-report/
+test-results/
+e2e/.proxy.e2e.json

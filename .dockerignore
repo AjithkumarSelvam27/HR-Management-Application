@@ -1,0 +1,9 @@
+node_modules
+client/node_modules
+client/dist
+client/.angular
+server/venv
+server/.env
+server/__pycache__
+e2e*
+.ruff_cache
